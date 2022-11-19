@@ -8,7 +8,7 @@
           <span>首页</span>
         </a-menu-item>
         <a-menu-item key="2">
-          <step-backward-outlined/>
+          <caret-right-outlined/>
           <span>展示</span>
         </a-menu-item>
         <a-menu-item key="3">
@@ -29,6 +29,9 @@
       >
         内容
       </a-layout-content>
+      <a-layout-footer style="text-align: center">
+        Ant Design ©2018 Created by Ant UED
+      </a-layout-footer>
     </a-layout>
   </a-layout>
 </template>
