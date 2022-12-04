@@ -4,15 +4,15 @@
       <div class="logo">logo</div>
       <a-menu v-model:selectedKeys="selectedKeys" theme="dark">
         <a-menu-item key="1">
-          <user-outlined/>
+          <user-outlined />
           <span>首页</span>
         </a-menu-item>
         <a-menu-item key="2">
-          <caret-right-outlined/>
+          <caret-right-outlined />
           <span>展示</span>
         </a-menu-item>
         <a-menu-item key="3">
-          <upload-outlined/>
+          <upload-outlined />
           <span>管理页面</span>
         </a-menu-item>
       </a-menu>
@@ -20,12 +20,17 @@
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0">
         <menu-unfold-outlined
-            class="trigger"
-            @click="() => (collapsed = !collapsed)"
+          class="trigger"
+          @click="() => (collapsed = !collapsed)"
         />
       </a-layout-header>
       <a-layout-content
-          :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
+        :style="{
+          margin: '24px 16px',
+          padding: '24px',
+          background: '#fff',
+          minHeight: '280px',
+        }"
       >
         内容
       </a-layout-content>
@@ -36,8 +41,8 @@
   </a-layout>
 </template>
 <script setup lang="ts">
-import {ref} from 'vue';
+import { ref } from "vue";
 
-const selectedKeys = ref<string[]>(['1'])
-const collapsed = ref<boolean>(false)
+const selectedKeys = ref<string[]>(["1"]);
+const collapsed = ref<boolean>(false);
 </script>
